@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap");
+
+@import "tailwindcss";
+
+:root {
+    --primary-color: #e67e22;
+    --primary-hover-color: #cf741f;
+    --bg-color: #fdf2e9;
+
+    --color-black: #333;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color-black);
+}
+
+@utility text-primary {
+    color: var(--primary-color);
+}
+
+@utility bg-primary {
+    background-color: var(--bg-color);
+}
+
+.padding-x {
+    @apply px-24;
+}
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        @apply text-gray-800 hover:text-primary font-[500] text-lg transition-colors duration-200;
+    }
+
+    .button {
+        @apply bg-[var(--primary-color)] rounded-[9px] text-white py-2 px-7 font-[500] cursor-pointer transition-all duration-300 ease-in-out relative hover:bg-[var(--primary-hover-color)] min-h-[45px];
+    }
+
+    .feature-img {
+        height: 2rem;
+        filter: brightness(0);
+        opacity: 50%;
+    }
+
+    .step-img-box {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: tomato; */
+    }
+
+    .step-img-box::before,
+    .step-img-box::after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .step-img-box::before {
+        width: 60%;
+        height: 60%;
+        /* 60% of parent's width */
+        padding-bottom: 60%;
+
+        background-color: #fdf2e9;
+        z-index: 1;
+    }
+
+    .step-img-box::after {
+        width: 45%;
+        padding-bottom: 45%;
+        background-color: #fae5d3;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    html {
+        font-size: 85%;
+    }
+    .padding-x {
+        @apply px-10;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 80%;
+    }
+    .feature-img {
+        height: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 75%;
+    }
+    .feature-img {
+        height: 1rem;
+    }
+    .padding-x {
+        @apply px-3;
+    }
+}
