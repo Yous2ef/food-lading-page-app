@@ -1,7 +1,14 @@
 import React from "react";
-import { Nav } from "./components/index.js";
-import { Hero, Features, HowItWork, Meals } from "./sections/index.js";
-import Testimonials from "./sections/Testimonials.jsx";
+import { Nav, Footer } from "./components/index.js";
+import {
+    Hero,
+    Features,
+    HowItWork,
+    Meals,
+    Pricing,
+    Testimonials,
+    Contact,
+} from "./sections/index.js";
 
 const App = () => {
     return (
@@ -9,6 +16,7 @@ const App = () => {
             <header>
                 <Nav />
             </header>
+
             <main className="relative">
                 <section
                     id="home"
@@ -45,7 +53,27 @@ const App = () => {
                     className="max-container padding-x py-20 ">
                     <Testimonials />
                 </section>
+
+                <div className="bg-white">
+                    <section
+                        id="pricing"
+                        className="min-h-screen padding-x pt-5">
+                        <Pricing />
+                    </section>
+                </div>
+
+                <div className="bg-white">
+                    <section
+                        id="contact"
+                        className="min-h-screen padding-x pt-34">
+                        <Contact />
+                    </section>
+                </div>
             </main>
+
+            <footer className="bg-white">
+                <Footer />
+            </footer>
         </>
     );
 };

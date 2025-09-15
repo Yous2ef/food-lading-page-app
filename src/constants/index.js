@@ -1,3 +1,4 @@
+import { Flame, UtensilsCrossed, Star, Check } from "lucide-react";
 import {
     appScreen1,
     appScreen2,
@@ -8,7 +9,6 @@ import {
     dave,
     hannah,
     steve,
-    
 } from "../assets";
 
 const navLinks = [
@@ -105,4 +105,104 @@ const testimonials = [
     },
 ];
 
-export { meals, dietTypes, steps, navLinks, testimonials };
+const pricingPlans = [
+    {
+        id: 1,
+        name: "Starter",
+        mealPrice: 13,
+        priceYearly: 399,
+        features: [
+            "1 meal per day",
+            "Order from 11am to 9pm",
+            "Free delivery",
+            "Access to newest creations",
+        ],
+        popular: false,
+    },
+    {
+        id: 2,
+        name: "Complete",
+        mealPrice: 11,
+        priceYearly: 649,
+        features: [
+            "2 meals per day",
+            "Order 24 hours a day / 7 days a week",
+            "Free delivery",
+            "Access to our AI meal generator",
+        ],
+        popular: true,
+    },
+];
+
+const pricingFeatures = [
+    {
+        Icon: Check,
+        title: "Never cook again",
+        description:
+            "Our subscriptions cover 365 days per year, even including major holidays.",
+    },
+    {
+        Icon: Star,
+        title: "Local and organic",
+        description:
+            "Our cooks only use local, fresh, and organic products to prepare your meals.",
+    },
+    {
+        Icon: UtensilsCrossed,
+        title: "No waste",
+        description:
+            "All our partners only use reusable containers to package all your meals.",
+    },
+    {
+        Icon: Flame,
+        title: "Fast and convenient",
+        description:
+            "Going on vacation? Just pause your subscription, and we refund unused days.",
+    },
+];
+
+const footerData = {
+    contactUs: {
+        title: "Contact us",
+        address: "623 Harrison St., 2nd Floor, San Francisco, CA 94107",
+        phone: "415-201-6370",
+        email: "hello@omnifood.com",
+    },
+    account: {
+        title: "Account",
+        links: [
+            { name: "Create account", href: "#" },
+            { name: "Sign in", href: "#" },
+            { name: "iOS app", href: "#" },
+            { name: "Android app", href: "#" },
+        ],
+    },
+    company: {
+        title: "Company",
+        links: [
+            { name: "About Omnifood", href: "#" },
+            { name: "For Business", href: "#" },
+            { name: "Cooking partners", href: "#" },
+            { name: "Careers", href: "#" },
+        ],
+    },
+    resources: {
+        title: "Resources",
+        links: [
+            { name: "Recipe directory", href: "#" },
+            { name: "Help center", href: "#" },
+            { name: "Privacy & terms", href: "#" },
+        ],
+    },
+};
+
+export {
+    meals,
+    dietTypes,
+    steps,
+    navLinks,
+    testimonials,
+    pricingPlans,
+    pricingFeatures,
+    footerData,
+};

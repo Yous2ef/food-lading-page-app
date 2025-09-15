@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import omnifoodLogo from "../assets/omnifood-logo.png";
+import {omnifoodLogo} from "../assets/index.js";
 import { Button } from "./index.js";
 import { navLinks } from "../constants/index.js";
 
