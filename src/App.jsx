@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav } from "./components/index.js";
 import { Hero, Features, HowItWork, Meals } from "./sections/index.js";
+import Testimonials from "./sections/Testimonials.jsx";
 
 const App = () => {
     return (
@@ -38,6 +39,12 @@ const App = () => {
                         <Meals />
                     </section>
                 </div>
+
+                <section
+                    id="testimonials"
+                    className="max-container padding-x py-20 ">
+                    <Testimonials />
+                </section>
             </main>
         </>
     );

@@ -1,4 +1,15 @@
-import { appScreen1, appScreen2, appScreen3, meal1, meal2 } from "../assets";
+import {
+    appScreen1,
+    appScreen2,
+    appScreen3,
+    meal1,
+    meal2,
+    ben,
+    dave,
+    hannah,
+    steve,
+    
+} from "../assets";
 
 const navLinks = [
     { href: "#how-it-works", label: "How it works" },
@@ -67,4 +78,31 @@ const dietTypes = [
     "Kid-friendly",
 ];
 
-export { meals, dietTypes, steps, navLinks };
+const testimonials = [
+    {
+        id: 1,
+        name: "Dave Bryson",
+        text: "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+        image: dave,
+    },
+    {
+        id: 2,
+        name: "Ben Hadley",
+        text: "The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore!",
+        image: ben,
+    },
+    {
+        id: 3,
+        name: "Steve Miller",
+        text: "Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!",
+        image: steve,
+    },
+    {
+        id: 4,
+        name: "Hannah Smith",
+        text: "I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.",
+        image: hannah,
+    },
+];
+
+export { meals, dietTypes, steps, navLinks, testimonials };

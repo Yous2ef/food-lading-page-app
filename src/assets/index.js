@@ -64,13 +64,13 @@ export {
     appScreen3,
 
     // Customer photos
-    ben,
     customer1,
     customer2,
     customer3,
     customer4,
     customer5,
     customer6,
+    ben,
     dave,
     hannah,
     steve,
