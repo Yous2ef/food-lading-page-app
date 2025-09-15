@@ -56,7 +56,7 @@ const Footer = () => {
                                     { Icon: Instagram, label: "Instagram" },
                                     { Icon: Facebook, label: "Facebook" },
                                     { Icon: Twitter, label: "Twitter" },
-                                ].map(({label }) => (
+                                ].map(({ Icon, label }) => (
                                     <a
                                         key={label}
                                         href="#"
