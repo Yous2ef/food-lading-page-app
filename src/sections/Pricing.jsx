@@ -13,9 +13,9 @@ const Pricing = () => {
                     Eating well without breaking the bank
                 </h2>
             </div>
-            <div >
+            <div>
                 {/* Pricing Cards */}
-                <div className="flex flex-col lg:flex-row gap-8 justify-center items-center lg:items-stretch max-w-4xl mx-auto">
+                <div className="flex flex-col sm:flex-row gap-8 justify-center items-center lg:items-stretch max-w-4xl mx-auto">
                     {pricingPlans.map((plan) => (
                         <div
                             key={plan.id}

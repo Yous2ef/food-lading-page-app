@@ -18,7 +18,7 @@ const Meals = () => {
 
                 <div className="grid lg:grid-cols-3 gap-12 place-items-center">
                     {/* Meal Cards */}
-                    <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
+                    <div className="lg:col-span-2 grid sm:grid-cols-2 gap-8 px-12 lg:px-0">
                         {meals.map((meal) => (
                             <div
                                 key={meal.id}
