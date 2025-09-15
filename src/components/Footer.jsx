@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-6">
                     {/* Logo, Social & Copyright Section */}
-                    <div className="order-4 text-center sm:text-left sm:order-4 lg:order-0 lg:col-span-2 sm:col-span-2 lg:col-span-1">
+                    <div className="order-4 text-center sm:text-left sm:order-4 lg:order-0 lg:col-span-2 sm:col-span-2">
                         <div className="mb-8 flex flex-col items-center sm:items-start">
                             <a
                                 className="flex items-center cursor-pointer"
@@ -56,7 +56,7 @@ const Footer = () => {
                                     { Icon: Instagram, label: "Instagram" },
                                     { Icon: Facebook, label: "Facebook" },
                                     { Icon: Twitter, label: "Twitter" },
-                                ].map(({ Icon, label }) => (
+                                ].map(({label }) => (
                                     <a
                                         key={label}
                                         href="#"
